@@ -58,7 +58,9 @@ function App() {
       />
 
       <motion.div className="container">
-        <motion.h1 variants={titleVariants}>React China</motion.h1>
+        <motion.h1 variants={titleVariants}>React</motion.h1>
+        <motion.h1 variants={titleVariants}>China</motion.h1>
+        <motion.h2 variants={titleVariants}>Coming Soon...</motion.h2>
       </motion.div>
     </motion.div>
   );

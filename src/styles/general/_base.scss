@@ -44,6 +44,15 @@ html {
 .app {
   position: relative;
   background-color: #070722b8;
+  min-height: 100vh;
+
+  & > h2 {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translate(-50%);
+    color: $primary;
+  }
 
   &:after {
     content: "";
@@ -74,25 +83,26 @@ html {
 
   & > h1 {
     width: 100%;
-
     font-size: 4rem;
     text-transform: uppercase;
 
     &:first-of-type {
       text-align: left;
-      font-size: 25vw;
+      font-size: 22vw;
       font-weight: 400;
     }
 
     &:nth-of-type(2) {
       text-align: right;
-      font-size: 15vw;
+      font-size: 13vw;
       font-weight: 100;
+      margin-top: -2rem;
     }
   }
-  & > h2 {
-    color: $primary;
-    padding: 3rem 0;
-    font-size: 3rem;
-  }
+  // & > h2 {
+
+  //   padding: 3rem 0;
+  //   font-size: 3rem;
+  //   text-align: left;
+  // }
 }

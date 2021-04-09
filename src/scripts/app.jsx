@@ -49,6 +49,7 @@ const logoVariants = {
 function App() {
   return (
     <motion.div initial="initial" animate="animate" className="app">
+      <motion.h2 variants={titleVariants}>Coming Soon...</motion.h2>
       <motion.img
         width="5rem"
         variants={logoVariants}
@@ -60,7 +61,6 @@ function App() {
       <motion.div className="container">
         <motion.h1 variants={titleVariants}>React</motion.h1>
         <motion.h1 variants={titleVariants}>China</motion.h1>
-        <motion.h2 variants={titleVariants}>Coming Soon...</motion.h2>
       </motion.div>
     </motion.div>
   );
